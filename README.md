@@ -5,10 +5,22 @@ Automated webcam snapshots to Twitter (Raspberry Pi)
 
 The CamTweeter script does what is says on the box. When the script runs,a snapshot is pulled from the first detected webcam and the image is published to Twitter with the current timestamp. The original application for the script is to monitor 3D printer progress.
 
+Download the Script
+===================
+
+In any folder, download the script by typing the following into a bash terminal:
+
+	git clone https://github.com/Leenix/CamTweeter.git
+	
+You can update the files at any time by navigating into the CamTweeter folder and typing:
+
+	git pull
+
+	
 Installing the Pre-requisites
 =============================
 
-The CamTweeter script uses the pygame library to capture webcam photos, and the Twython library to interface with a Twiter app account.
+The CamTweeter script uses the pygame library to capture webcam photos, and the Twython library to interface with a Twitter app account.
 
 In a bash terminal, enter:
 
