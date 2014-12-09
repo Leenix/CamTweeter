@@ -60,7 +60,8 @@ Cron is a basic scheduling tool that can be used to set up timed events. A Cron 
 This will open up an editing window for the Cron Table, which is the scheduling	script. The script will be blank if Cron has not be used before.
 
 2) At the end of the script (after the # lines), type the following:
-		* * * * * /usr/bin/python <location of CamTweeter script>
+
+	* * * * * /usr/bin/python <location of CamTweeter script>
 
    This script will run every minute. Other time frames can be spcified by following this guide:
 		http://www.thegeekstuff.com/2011/07/cron-every-5-minutes/
