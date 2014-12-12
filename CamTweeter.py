@@ -25,14 +25,14 @@ if __name__ == '__main__':
     cam.start()
 
     # Get an image from the camera
-    image = cam.get_image()
+    capture = cam.get_image()
     logging.info("Image captured")
     cam.stop()
 
     # Upload to Twitter
     now = datetime.datetime.now()
     time_string = now.strftime("%Y-%m-%d %T")
-    image.save(image, "/tmp/image.jpg")
+    image.save(capture, "/tmp/image.jpg")
     photo = open("/tmp/image.jpg", "rb")
     twitter = sign_in_to_twitter()
     twitter.update_status_with_media(status=time_string, media=photo)
