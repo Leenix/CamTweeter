@@ -23,9 +23,10 @@ Installing the Pre-requisites
 The CamTweeter script uses the pygame library to capture webcam photos, and the Twython library to interface with a Twitter app account.
 
 In a bash terminal, enter:
-
+	
+	sudo apt-get update
 	sudo apt-get install python-pip python-pygame cron
-	pip install twython
+	sudo pip install twython
 
 
 Set up Twitter details
